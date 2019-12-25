@@ -1,0 +1,73 @@
+<html> 
+<head>
+    <style>
+ul {
+      padding: 20px;
+      background: black;
+      border-radius: 15px;
+      text-align:center;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      text-align:center;
+    }
+     a {
+         text-align:center;
+      color: white;
+      text-decoration:none;
+    }
+     body{
+                background: url(glass.jpg);
+                background-size: cover;
+                background-position:center;
+                text-align:right;
+                padding:0px;
+                margin:0px;
+            }
+            form{
+              font-family: helvetica;
+              font-size: 16px;
+              margin:200px 50px 50px 50px;
+              
+            }
+            
+            input{
+                padding:10px;
+                border:0px;
+            }
+            input[type="submit"]
+            {
+                background:red;
+                color:white;
+                font-size: 15px;
+            }
+            a{
+                color:red;
+            }
+    
+    
+    </style></head>
+    </body>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="album.html">Album</a></li>
+      <li><a href="index.html">Contacts</a></li>
+      <li><a href="registration.html">Sign Up</a></li>
+    </ul>
+     <form  method="post" action="Login"> 
+         <b>USERNAME</b> <input type="text" id="username" name="username" placeholder="Your name.." required><br></br>
+         <b>PASSWORD</b> <input type="password" id="userpass" name="userpass" placeholder="Password.." required><br></br>
+		 <b>User Type</b> <select id="country" name="usertype">
+                    <option value="customer">Customer</option>
+                    <option value="retailer">Retailer</option>
+                    <option value="admin">admin</option>
+                </select>
+         
+ 
+         <input type="submit" value="log In">
+         <p>if not registered click here<a href="registration.html">Register</a></p>
+         </form>
+    
+    </body>
+    </html>

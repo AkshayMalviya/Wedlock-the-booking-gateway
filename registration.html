@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <style>
+ul {
+      padding: 20px;
+      background: black;
+      border-radius: 15px;
+      text-align:center;
+      margin:0px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      text-align:center;
+      margin:0px;
+    }
+     a {
+         text-align:center;
+         color: white;
+         text-decoration:none;
+    }
+     body{
+                background: url(glass.jpg);
+                background-size: cover;
+                background-position:center;
+                text-align:right;
+                padding:0px;
+                margin:0px;
+            }
+            form{
+              font-family: helvetica;
+              font-size: 16px;
+              margin:100px 50px 50px 50px;
+              
+            }
+            
+            input{
+                padding:10px;
+                border:0px;
+            }
+            input[type="submit"]
+            {
+                background:red;
+                color:white;
+                font-size: 15px;
+            }
+            a{
+                color:red;
+            }
+            a:hover{
+                color:white;
+            }
+    
+    
+    
+       </style>
+    </head>
+    <body>
+        <ul>
+      <li><a href="index.html">About </a></li>
+      <li><a href="album.html">Album</a></li>
+      <li><a href="index.html">Contacts</a></li>
+      <li><a href="registration.html">Sign Up</a></li>
+    </ul>
+        <form  method="post" action="Registrat"> 
+		<b>First Name</b>
+            <input type="text" id="fn" name="fn" placeholder="Your first name.." required><br></br>
+            
+            <b>Last Name</b>
+            <input type="text" id="ln" name="ln" placeholder="Your last name.." required><br/></br>
+            
+            <b>User Name</b>
+            <input type="text" id="un" name="un" placeholder="Your User name" required><br></br>
+            
+            <b>Password</b>
+            <input type="password" id="pass" name="pass" placeholder="Password please" required><br></br>
+            
+            <b>Email</b>
+            <input type="email" id="email" name="email" placeholder="Email please" required><br></br>
+            
+           <b>Mobile Number</b>
+            <input type="tel" id="mob" name="mob" placeholder="Mobile Number" required><br></br>
+            
+            <b>Date</b>
+            <input type="date" id="date" name="date" placeholder="Date of event" required><br></br>
+        
+         <input type="submit" value="Save">
+         <p>If already registered go to login page<a href="Login.html">Login</a></p>
+         </form>
+    
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body,h1,h2,h3,h4,h5 {
+            font-family: "Poppins", sans-serif;
+
+
+        }
+        body {font-size:24px;
+              font-family: "harrington",monaco,cursive;
+              background-color: #ffc299;
+        }
+        .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+        .w3-half img:hover{opacity:1}
+
+        a{
+            font-style: italic;
+        }
+
+        .w3-xxxlarge{
+            font-family: italic;
+        }
+
+        .w3-jumbo{
+            font-size: 70px;
+            font-style:italic;
+
+        }
+        .tt{
+            font-size: 80px;
+            text-align:center;
+        }
+
+
+    </style>
+    <body>
+
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-brown w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+            <div class="w3-container">
+                <h3 class="w3-padding-64"><b>The Booking<br>Gateway</b></h3>
+            </div>
+            <div class="w3-bar-block">
+                <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+                <a href="album.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Album</a> 
+                <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> 
+                <a href="Login.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sign Up</a> 
+
+            </div>
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+            <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+            <span>The Booking Gateway</span>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+            <!-- Header -->
+            <div class="w3-container" style="margin-top:80px" id="showcase">
+                <div class="tt">
+                    WedLock
+                </div>
+                <h1 class="w3-xxxlarge w3-text-brown"><b>Showcase.</b></h1>
+                <hr style="width:50px;border:5px solid blue" class="w3-round">
+            </div>
+
+            <!-- Photo grid (modal) -->
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <img src="images/home1.jpg" style="width:100%" onclick="onClick(this)" alt="">
+                    <img src="images/home3.jpg" style="width:100%" onclick="onClick(this)" alt="">
+                    <img src="images/home7.jpg" style="width:100%" onclick="onClick(this)" alt="">
+                </div>
+
+                <div class="w3-half">
+                    <img src="images/home6.jpg" style="width:100%" onclick="onClick(this)" alt="">
+                    <img src="images/home4.jpg" style="width:100%" onclick="onClick(this)" alt="">
+                    <img src="images/home3.jpg" style="width:100%" onclick="onClick(this)" alt="">
+                </div>
+            </div>
+
+            <!-- Modal for full size images on click-->
+            <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display = 'none'">
+                <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image">
+                    <p id="caption"></p>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="w3-container" id="services" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-brown"><b>About Us.</b></h1>
+                <hr style="width:50px;border:5px solid blue" class="w3-round">
+                <p>We are wedding planners  that focus on what's best for your wedding and what's best for you!</p>
+                <p>
+                    We are responsible for organising coordinating and helping couples to deliver successful wedding events 
+                    .Unlike a general event planner, we routinely focus our professional efforts on nupitial celebrations.
+                    We work closely alongsides couples and our clients chosen vendors to deliver breathtaking and memorable special
+                    event celebrations.
+                </p>
+            </div>
+
+            <!-- Designers -->
+            <div class="w3-container" id="designers" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-brown"><b>Fore Words</b></h1>
+                <hr style="width:50px;border:5px solid blue" class="w3-round">
+                <p>The best team in the world.</p>
+                <p>We are glad to represent a Event Planning Web project.In which we will recommend you to improvise your Dream Event with our accomoditise.
+                    We will provide you formely environment to check through our checklist.This Website allows you to collect all the things you want for your Event. That you can buy from retailer and they all combinely make your Event Successful. 
+                    You can choose options according to your Boudget....
+                </p>
+
+            </div>
+
+            <!-- The Team -->
+            <div class="w3-row-padding w3-grayscale">
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+
+
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+
+
+                    </div>
+                </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Packages / Pricing Tables -->
+            <div class="w3-container" id="packages" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-brown"><b>Services.</b></h1>
+                <hr style="width:50px;border:5px solid blue" class="w3-round">
+                <p>
+                    These are the following services that we provide to our customers.So that our customers 
+                    enjoy each and every function along with their family,friends, and relatives.
+
+                </p>
+            </div>
+
+            <div class="w3-row-padding">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-light-grey w3-center">
+                        <li class="w3-black w3-xlarge w3-padding-32">Facilities</li>
+                        <li class="w3-padding-16">Venues and accomodation</li>
+                        <li class="w3-padding-16">Sets,Themes</li>
+                        <li class="w3-padding-16">Menu planning,Bar Tendering Services</li>
+                        <li class="w3-padding-16">Music and Entertainment</li>
+                        <li class="w3-padding-16">Photography</li>
+                        <li class="w3-padding-16">Concepts and Decoration</li>
+
+                    </ul>
+                </div>
+
+                <div class="w3-half">
+                    <ul class="w3-ul w3-light-grey w3-center">
+                        <li class="w3-black w3-xlarge w3-padding-32">Rental Services</li>
+                        <li class="w3-padding-16">Security</li>
+                        <li class="w3-padding-16">Hostesses</li>
+                        <li class="w3-padding-16">Travel</li>
+                        <li class="w3-padding-16">Travel and Transport</li>
+                        <li class="w3-padding-16">Fireworks</li>
+                        <li class="w3-padding-16">Procession</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="w3-container" id="contact" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-brown"><b>Contact.</b></h1>
+                <hr style="width:50px;border:5px solid blue" class="w3-round">
+                <p>Do you want us to make your wedding memorable? Fill out the form  with the details. We love meeting new people!</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <button type="submit" class="w3-button w3-block w3-padding-large w3-brown w3-margin-bottom">Send Message</button>
+                </form>  
+            </div>
+
+            <!-- End page content -->
+        </div>
+
+        <!-- W3.CSS Container -->
+        <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">  </p></div>
+
+        <script>
+        // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+        // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+        </script>
+
+    </body>
+</html>
